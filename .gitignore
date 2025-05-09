@@ -1,41 +1,108 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
 
-# dependencies
-/node_modules
-/.pnp
+# Diagnostic reports
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Dependency directories
+node_modules/
+jspm_packages/
+web_modules/
+bower_components/
+
+# Yarn and pnpm
+.pnp
 .pnp.*
 .yarn/*
 !.yarn/patches
 !.yarn/plugins
 !.yarn/releases
 !.yarn/versions
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.yarn-integrity
 
-# testing
-/coverage
+# Testing and coverage
+coverage
+*.lcov
+.nyc_output
+lib-cov
 
-# next.js
-/.next/
-/out/
-
-# production
+# Build and production outputs
+build
 /build
+dist
+out
+.next
+/.next/
+out/
+.nuxt
+.vuepress/dist
+**/.vitepress/dist
+.docusaurus
+.serverless/
+.fusebox/
+.dynamodb/
 
-# misc
-.DS_Store
-*.pem
+# Cache directories
+.cache
+.parcel-cache
+.temp
+**/.vitepress/cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+.fusebox/
+.npm
+.eslintcache
+.stylelintcache
+.docusaurus
 
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.pnpm-debug.log*
+# Compiled binary addons
+build/Release
 
-# env files (can opt-in for committing if needed)
-.env*
-
-# vercel
-.vercel
-
-# typescript
+# TypeScript
 *.tsbuildinfo
 next-env.d.ts
+
+# Environment variables
+.env
+.env.*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Miscellaneous
+.DS_Store
+*.pem
+.lock-wscript
+.node_repl_history
+*.tgz
+.tern-port
+.vscode-test
+.grunt
+
+# Vercel
+.vercel
+
+# Next.js, Nuxt.js, Gatsby, Vuepress, Vitepress
+.cache/
+.vuepress/dist
+**/.vitepress/cache
+**/.vitepress/dist
